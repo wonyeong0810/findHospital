@@ -1,0 +1,14 @@
+# Copy this file to android/key.properties and fill in your upload keystore
+# details. key.properties and the .jks file must NEVER be committed.
+#
+# Create the keystore once (back it up safely — losing it means you can no
+# longer publish updates to the same app listing):
+#
+#   keytool -genkey -v -keystore ~/findhospital-upload.jks \
+#     -keyalg RSA -keysize 2048 -validity 10000 -alias upload
+#
+storePassword=changeme
+keyPassword=changeme
+keyAlias=upload
+# Absolute path to the .jks file, or relative to the android/ directory.
+storeFile=/home/wonyeong/findhospital-upload.jks
